@@ -44,7 +44,6 @@ const App = () => {
 
   const renderCard = (index) => {
     if (index === 4) {
-      // Centre de la grille
       return (
         <TouchableOpacity
           key="center"
@@ -95,13 +94,16 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   cardPlaceholder: {
-    padding: 10,
-    margin: 5,
-    width: 70,
-    height: 100,
+    width: "80px",
+    height: "120px",
+    borderRadius: "10px",
     borderWidth: 1,
-    borderColor: "black",
-    backgroundColor: "#f0f0f0",
+    borderColor: "#000",
+    margin: 4,
+  },
+  card: {
+    height: 150,
+    width: 100,
   },
 });
 
