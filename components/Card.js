@@ -8,6 +8,7 @@ const Card = ({ value, suitIndex, onPress }) => {
   const handlePress = () => {
     onPress(value);
   };
+  const color = suitIndex === 0 || suitIndex === 1 ? "red" : "black";
 
   return (
     <TouchableOpacity
@@ -33,6 +34,7 @@ const Card = ({ value, suitIndex, onPress }) => {
         <Text
           style={{
             fontSize: 14,
+            color: color,
           }}
         >{`${value} ${suits[suitIndex]}`}</Text>
       </View>
@@ -47,6 +49,7 @@ const Card = ({ value, suitIndex, onPress }) => {
         <Text
           style={{
             fontSize: 20,
+            color: color,
           }}
         >{`${value} ${suits[suitIndex]}`}</Text>
       </View>
@@ -62,6 +65,7 @@ const Card = ({ value, suitIndex, onPress }) => {
         <Text
           style={{
             fontSize: 14,
+            color: color,
           }}
         >{`${value} ${suits[suitIndex]}`}</Text>
       </View>
